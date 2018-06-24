@@ -1,0 +1,161 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 4.4.0-1060-aws - x86_64
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02070/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02070.dir/build.make CMakeFiles/cmTC_02070.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02070.dir/CheckIncludeFile.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_02070.dir/CheckIncludeFile.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_02070.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02070.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_02070.dir/objects1.rsp  -o cmTC_02070.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+
+Determining if the posix_memalign exist passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c4b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c4b2.dir/build.make CMakeFiles/cmTC_3c4b2.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c4b2.dir/CheckSymbolExists.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_3c4b2.dir/CheckSymbolExists.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3c4b2.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c4b2.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_3c4b2.dir/objects1.rsp  -o cmTC_3c4b2.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+File /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ed62/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0ed62.dir/build.make CMakeFiles/cmTC_0ed62.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ed62.dir/CheckIncludeFile.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_0ed62.dir/CheckIncludeFile.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0ed62.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ed62.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_0ed62.dir/objects1.rsp  -o cmTC_0ed62.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+
+Determining if the memalign exist passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e576a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e576a.dir/build.make CMakeFiles/cmTC_e576a.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e576a.dir/CheckSymbolExists.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_e576a.dir/CheckSymbolExists.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e576a.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e576a.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_e576a.dir/objects1.rsp  -o cmTC_e576a.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+File /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memalign
+  return ((int*)(&memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_24a0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_24a0f.dir/build.make CMakeFiles/cmTC_24a0f.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24a0f.dir/CheckFunctionExists.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=fseeko -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_24a0f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:27: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+char CHECK_FUNCTION_EXISTS();
+                          ^
+                           void
+1 warning generated.
+Linking C executable cmTC_24a0f.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24a0f.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=fseeko -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_24a0f.dir/objects1.rsp  -o cmTC_24a0f.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c6862/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6862.dir/build.make CMakeFiles/cmTC_c6862.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6862.dir/CheckIncludeFile.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_c6862.dir/CheckIncludeFile.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c6862.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6862.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_c6862.dir/objects1.rsp  -o cmTC_c6862.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_59848/fast"
+/usr/bin/make -f CMakeFiles/cmTC_59848.dir/build.make CMakeFiles/cmTC_59848.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59848.dir/CheckIncludeFile.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_59848.dir/CheckIncludeFile.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_59848.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59848.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_59848.dir/objects1.rsp  -o cmTC_59848.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dacd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dacd3.dir/build.make CMakeFiles/cmTC_dacd3.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dacd3.dir/CheckIncludeFile.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_dacd3.dir/CheckIncludeFile.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_dacd3.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dacd3.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_dacd3.dir/objects1.rsp  -o cmTC_dacd3.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cbd16/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbd16.dir/build.make CMakeFiles/cmTC_cbd16.dir/build
+make[1]: Entering directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbd16.dir/CheckIncludeFile.c.o
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc    -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2 -fPIE   -o CMakeFiles/cmTC_cbd16.dir/CheckIncludeFile.c.o   -c /home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cbd16.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbd16.dir/link.txt --verbose=1
+/home/ubuntu/emsdk/emscripten/1.38.6/emcc  -s WASM=1    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Winconsistent-missing-override -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -pthread -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s WASM=0 -DNDEBUG -O2    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_cbd16.dir/objects1.rsp  -o cmTC_cbd16.js 
+make[1]: Leaving directory '/home/ubuntu/opencv/build_wasm/CMakeFiles/CMakeTmp'
+
+

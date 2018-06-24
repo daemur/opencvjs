@@ -1,0 +1,1 @@
+-I/home/ubuntu/opencv/build_wasm -I/home/ubuntu/opencv/modules/dnn/include -I/home/ubuntu/opencv/build_wasm/modules/dnn -I/home/ubuntu/opencv/modules/core/include -I/home/ubuntu/opencv/modules/imgproc/include -I/home/ubuntu/opencv/modules/dnn/misc/caffe -I/home/ubuntu/opencv/modules/dnn/misc/tensorflow -isystem /home/ubuntu/opencv/3rdparty/protobuf/src 

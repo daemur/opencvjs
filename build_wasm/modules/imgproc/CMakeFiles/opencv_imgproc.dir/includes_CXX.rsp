@@ -1,0 +1,1 @@
+-I/home/ubuntu/opencv/build_wasm -I/home/ubuntu/opencv/modules/imgproc/include -I/home/ubuntu/opencv/build_wasm/modules/imgproc -I/home/ubuntu/opencv/modules/core/include 

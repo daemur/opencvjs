@@ -1,0 +1,1 @@
+-I/home/ubuntu/opencv/build_wasm -I/home/ubuntu/opencv/modules/core/include -I/home/ubuntu/opencv/build_wasm/modules/core -I/home/ubuntu/opencv/3rdparty/zlib -I/home/ubuntu/opencv/build_wasm/3rdparty/zlib 
